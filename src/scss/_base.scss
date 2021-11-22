@@ -1,12 +1,12 @@
 
 // Bootstrap
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
 // Colors Variables
 $color-dark: #262626;
 $color-black: #0000;
 $color-primary: #d3ab55;
-$color-secondary : #bbb;
+$color-secondary : #ff4a42;
 $Color-white : #ffff;
 
 
@@ -15,7 +15,10 @@ $font-dancingScript : 'Dancing Script', cursive;
 $font-josefinSans : 'Josefin Sans', sans-serif;
 $font-nunito : 'Nunito', sans-serif;
 $font-sahel : Sahel, Tahoma;
+$font-arial : Arial, Helvetica, sans-serif;
 
+// Font size Variables 
+$font-14: 14px;
 
 // Import Fonts
 @font-face {
@@ -62,6 +65,11 @@ $font-sahel : Sahel, Tahoma;
 
 // Body
 body{
+    font-family: $font-arial;
+    font-size: $font-14;
+
     background-color: $color-primary;
 }
+
+
 
