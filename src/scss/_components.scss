@@ -1,4 +1,4 @@
-// Links
+// Tag a
 a{
     text-decoration: none;
     transition: color .2s;
@@ -6,4 +6,20 @@ a{
     &:hover{
         color: $color-secondary;
     }
+}
+
+//Tag li
+li{
+    list-style: none;
+    cursor: pointer;
+    @extend a;
+    display: inline-block;
+}
+
+//header
+header{
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
 }
