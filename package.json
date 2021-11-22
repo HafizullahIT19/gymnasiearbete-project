@@ -1,0 +1,33 @@
+{
+  "name": "web-files",
+  "version": "1.0.0",
+  "description": "Title:",
+  "private": true,
+  "scripts": {
+    "start": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "watch": "webpack-dev-server --mode=development",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^4.6.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.7",
+    "eslint": "^7.31.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.2",
+    "mini-css-extract-plugin": "^1.6.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.2.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "prettier.tabWidth": 4,
+    "editor.fontSize": 17,
+
+    //LiveSassCompile
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ],
+
+    //ESLint
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll": true,
+    //     "source.fixAll.eslint": true
+    // },
+}
