@@ -94,3 +94,20 @@ body {
 
     background-color: $color-primary;
 }
+
+// For All a Tags
+a{
+    text-decoration: none;
+    transition: color .2s;
+    
+    &:hover{
+        color: $color-secondary;
+    }
+}
+
+// For All li Tags
+li{
+    list-style: none;
+    cursor: pointer;
+    @extend a;
+}

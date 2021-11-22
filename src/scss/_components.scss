@@ -1,20 +1,5 @@
-// Tag a
-a{
-    text-decoration: none;
-    transition: color .2s;
-    
-    &:hover{
-        color: $color-secondary;
-    }
-}
 
-//Tag li
-li{
-    list-style: none;
-    cursor: pointer;
-    @extend a;
-    display: inline-block;
-}
+// display: inline-block;
 
 //header
 header{
@@ -22,4 +7,8 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 25px 0;
+
+    li{
+        display: none;
+    }
 }
