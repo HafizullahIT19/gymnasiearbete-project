@@ -1,14 +1,33 @@
+//Components
 
-// display: inline-block;
-
-//header
-header{
+//Header Component 
+header {
     background-color: $color-white;
     display: flex;
     justify-content: space-around;
     padding: 25px 0;
+    position: relative;
 
-    li{
+    li {
         display: none;
+        margin-right: 35px;
+        font-size: 1.3em;
+        margin-top: 13px;
+    }
+
+    .search-icon {
+        @include perfectCentering;
+
+        a {
+            color: $color-black;
+        }
+    }
+
+    .drop-down-menu{
+        @include perfectCentering;
+
+        a {
+            color: $color-black;
+        }
     }
 }

@@ -3,8 +3,8 @@
 
 // Colors Variables
 $color-dark: #262626;
-$color-black: #0000;
-$color-primary: #d3ab55;
+$color-black:black;
+$color-primary: #1EC6B6;
 $color-secondary: #ff4a42;
 $color-white: #ffff;
 
@@ -92,7 +92,7 @@ body {
     font-family: $font-arial;
     font-size: $font-14;
 
-    background-color: $color-primary;
+    background-color: $color-dark;
 }
 
 // For All a Tags

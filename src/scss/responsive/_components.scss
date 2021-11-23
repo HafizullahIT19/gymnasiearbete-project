@@ -1,0 +1,66 @@
+
+//Responsive Components 
+
+//Mobile First Bootstrap-v4
+
+@media (max-width: 576px) { 
+    header {
+        .search-icon {
+            display: none !important;
+        }
+        .drop-down-menu {
+            margin-top: 11px ;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    header {
+        .search-icon {
+            position: absolute;
+            width: 45px;
+            right: 45px;
+            top: 0;
+            bottom: 0;
+            background-color: $color-secondary;
+            a {
+                color: $color-white !important;
+            }
+        }
+
+        .drop-down-menu {
+            position: absolute;
+            width: 45px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1000;
+            background-color:$color-primary;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    header {
+        li{
+            display: inline-block;
+        }
+        .drop-down-menu{
+            display: none;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    header {
+        .search-icon {
+            width: 100px;
+        }
+    }
+}
