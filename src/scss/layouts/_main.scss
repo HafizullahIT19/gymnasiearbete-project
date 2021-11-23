@@ -1,5 +1,4 @@
-//Slider
-
+//Slider Start 
 .slider {
     background-image: url('images/banner2.png');
     height: 50vw;
@@ -43,3 +42,57 @@
         }
     }
 }
+// Slider End
+
+// Search bar Start
+.search-bar{
+    display: flex; //TODO: create a mixin: columnCentering
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-navy;
+    padding: 20px 25px;
+
+    h3{
+        color: $color-white;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    form{
+        display: flex; //TODO: create a mixin: columnCentering
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    input{
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $color-thirdly;
+        border-radius: 5px;
+        margin: 10px 10px;
+        padding: 17px 50px;
+        color: white;
+        outline: 0;
+    }
+
+    .search-btn{
+        background-color: $color-secondary;
+        color: $color-white;
+        padding: 17px 39px;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white !important;
+        }
+    }
+}
+// Search bar End

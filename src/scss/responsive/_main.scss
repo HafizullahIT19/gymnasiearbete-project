@@ -13,4 +13,14 @@
 @media (min-width: 992px) { }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+    .search-bar{
+        flex-direction: row; //TODO: create a mixin: rowCentering
+        justify-content: center;
+        
+        form{
+            flex-direction: row; //TODO: create a mixin: rowCentering
+            justify-content: center;
+        }
+    }
+}
