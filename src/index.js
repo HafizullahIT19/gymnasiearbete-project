@@ -11,6 +11,7 @@ import './scss/main.scss'
 // import img from'./images/bild.jpg'
 import './images/coding.png'
 import './images/logo.png'
+import './images/banner2.png'
 
 
 //JS Files

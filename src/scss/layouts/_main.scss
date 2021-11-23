@@ -1,1 +1,45 @@
+//Slider
 
+.slider {
+    background-image: url('images/banner2.png');
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-text{
+        @include perfectCentering;
+        height: 45vw;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3{
+            font-size: 10vw;
+            font-family: $font-bycd;
+            font-weight: 400;
+            color: $color-white;
+            line-height: 15vw;
+        }
+        p{
+            font-size: 2.5vw;
+            font-weight: 400;
+            color: $color-white;
+        }
+
+    }
+    &-btn {
+        background-color: $color-primary;
+        color: $color-white;
+        font-family: $font-rubik;
+        font-size: 1.7vw;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        padding: 1vw 1.5vw;
+        transition: 0.3s;
+
+        &:hover{
+                background-color: $color-secondary;
+                color: $color-white !important;
+        }
+    }
+}

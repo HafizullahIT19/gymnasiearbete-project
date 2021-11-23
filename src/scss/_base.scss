@@ -1,25 +1,8 @@
-// Bootstrap
+// Import Bootstrap
 // @import "~bootstrap/scss/bootstrap";
 
-// Colors Variables
-$color-dark: #262626;
-$color-black:black;
-$color-primary: #1EC6B6;
-$color-secondary: #ff4a42;
-$color-white: #ffff;
-
-// Fonts Variables
-$font-dancingScript: 'Dancing Script', cursive;
-$font-josefinSans: 'Josefin Sans', sans-serif;
-$font-nunito: 'Nunito', sans-serif;
-$font-sahel: Sahel, Tahoma;
-$font-arial: Arial, Helvetica, sans-serif;
-
-// Font size Variables
-$font-14: 14px;
-$font-15: 15px;
-
 // Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap');
 @font-face {
     font-family: Sahel;
     src: url('../fonts/Sahel.eot');
@@ -29,6 +12,32 @@ $font-15: 15px;
         url('../fonts/Sahel.ttf') format('truetype');
     font-weight: normal;
 }
+
+// Colors Variables
+$color-dark: #262626;
+$color-black:black;
+$color-primary: #1EC6B6;
+$color-secondary: #ff4a42;
+$color-white: #ffff;
+
+// Fonts Variables
+$font-sahel: Sahel, Tahoma;
+$font-arial: Arial, Helvetica, sans-serif;
+$font-bycd: 'Nothing You Could Do', cursive;
+$font-rubik: 'Rubik', sans-serif;
+
+// Font size Variables
+//PX
+$font-14: 14px;
+$font-15: 15px;
+
+//VW
+$font-10vw: 10vw;
+$font-2-5vw: 2.5vw;
+
+
+
+
 
 // @mixin
 @mixin perfectCentering {
@@ -92,7 +101,7 @@ body {
     font-family: $font-arial;
     font-size: $font-14;
 
-    background-color: $color-dark;
+    // background-color: $color-dark;
 }
 
 // For All a Tags
