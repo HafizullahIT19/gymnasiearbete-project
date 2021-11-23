@@ -102,11 +102,11 @@ module.exports = (env , {mode})=>{
     config.module.rules.push(...[
         {
             test: /\.css$/i,
-            use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader"], 
+            use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader?url=false"], 
         },
         {
             test: /\.s[ac]ss$/i,  // /\.(scss|sass)$/i  
-            use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+            use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader?url=false", "sass-loader"],
         },
     ]);
 
