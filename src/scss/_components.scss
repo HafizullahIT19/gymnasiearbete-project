@@ -31,3 +31,69 @@ header {
         }
     }
 }
+
+// Popular-container Article Component 
+.popular-container {
+    article {
+        position: relative;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: transform .3s;
+
+        img {
+            margin-bottom: 20px;
+            height: 280px;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+
+            .popular-image-info p {
+                color: $color-secondary;
+                transition: 0.3s;
+            }
+
+            .popular-image-info a {
+                color: $color-white;
+                background-color: $color-secondary;
+                transition: 0.3s;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+            content: '';
+            width: 100%;
+            height: 92.4%;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+
+        .popular-image-info {
+            position: absolute;
+            left: 30px;
+            bottom: 50px;
+            z-index: 10000;
+
+            p {
+                font-size: 22px;
+                color: $color-white;
+                font-weight: 400;
+                transition: 0.3s;
+            }
+
+            a {
+                background-color: $color-primary;
+                font-size: 12px;
+                border-radius: 30px;
+                font-weight: 400;
+                padding: 7px 12px;
+                color: $color-white;
+                margin-left: 10px;
+            }
+        }
+    }
+}
