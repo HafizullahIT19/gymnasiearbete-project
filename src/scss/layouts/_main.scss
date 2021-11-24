@@ -96,3 +96,28 @@
     }
 }
 // Search bar End
+
+// Popular Start
+.popular{
+    &-heading{
+        @extend %row;
+        flex-direction: column;//TODO: create a mixin: columnCentering
+        align-items: center;
+        margin: 100px 0;
+    }
+    &-title {
+        font-size: 38px;
+        font-weight: 400;
+        color: $color-navy;
+        margin: 10px;
+    }
+    
+    &-description {
+        font-size: 16px;
+        color: $color-gray;
+        line-height: 30px;
+        font-weight: 400;
+    }
+}
+
+// Popular End
