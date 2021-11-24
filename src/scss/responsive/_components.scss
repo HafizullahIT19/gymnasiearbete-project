@@ -63,4 +63,18 @@
             width: 100px;
         }
     }
+
+    .newsletter-container {
+        flex-direction: row !important;
+        justify-content: center;
+
+        .mail-form {
+            // flex-direction: row !important; 
+            display: block !important;
+        }
+        .newsletter-text {
+            margin-top: 0 !important;
+            margin-right: 15px;
+        }
+    }
 }

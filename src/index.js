@@ -18,6 +18,7 @@ import './images/3.png'
 import './images/4.png'
 import './images/5.png'
 import './images/6.png'
+import './images/newsletter.png'
 
 
 

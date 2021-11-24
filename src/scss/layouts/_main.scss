@@ -127,5 +127,83 @@
         justify-content: center;
     }
 }
-
 // Popular End
+
+// Newsletter Start 
+.newsletter{
+    display: flex;
+    background-image: url('../images/newsletter.png');
+    background-position: 65% 65%;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        background-color: $color-navy;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .7;
+    }
+
+    &-container{
+        @extend %row;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10000;
+
+        .newsletter-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 25px;
+
+            h4 {
+                font-size: 24px;
+                font-weight: 400;
+                color: $color-white;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                color: $color-gray1;
+            }
+        }
+        .mail-form{
+            display: flex;
+            flex-direction: column;
+
+            input {
+                width: 40vw;
+                height: 50px;
+                background-color: $color-white;
+                border-radius: 5px;
+                border: none;
+                padding-left: 15px;
+                color: $color-black;
+                font-size: 16px;
+                font-weight: 300;
+                margin: 10px 0;
+                outline: none;
+            }
+
+            .newsletter-btn {
+                background-color: $color-secondary;
+                color: $color-white;
+                padding: 16px 10px;
+                border: 0;
+                font-size: 16px;
+                border-radius: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// Newsletter End 
