@@ -1,24 +1,42 @@
-
 //Responsive main (Home)
 
 //Mobile First Bootstrap-v4
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .left-footer{
+            margin-right: 30px;
+        }
+    }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    // footer {
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { }
+@media (min-width: 992px) {
+    // footer {
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    .search-bar{
+@media (min-width: 1200px) {
+    .search-bar {
         flex-direction: row; //TODO: create a mixin: rowCentering
         justify-content: center;
-        
-        form{
+
+        form {
             flex-direction: row; //TODO: create a mixin: rowCentering
             justify-content: center;
         }

@@ -20,6 +20,7 @@ import './images/5.png'
 import './images/6.png'
 import './images/newsletter.png'
 import './images/video.png'
+import './images/footer_logo.png'
 
 
 
