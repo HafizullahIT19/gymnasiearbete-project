@@ -137,3 +137,9 @@ li{
     cursor: pointer;
     @extend a;
 }
+
+// For all images
+img {
+    width: 100%;
+    height: auto;
+}
