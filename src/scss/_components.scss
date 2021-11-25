@@ -97,3 +97,33 @@ header {
         }
     }
 }
+
+
+// To top Button
+.to-top-btn{
+    @include perfectCentering;
+    position: fixed;
+    right: 25px;
+    bottom: 15px;
+    background-color: $color-primary;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    z-index: 1000;
+    
+    i{
+        color: $color-white;
+        font-size: 25px;
+    }
+
+    &:hover{
+        background-color: $color-secondary;
+    }
+}
+
+.active-to-top-Btn{
+    opacity: 1;
+    bottom: 40px;
+}
