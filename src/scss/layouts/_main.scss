@@ -1,29 +1,28 @@
-//Slider Start 
+//Slider Start
 .slider {
     background-image: url('images/banner2.png');
     height: 50vw;
     background-repeat: no-repeat;
     background-size: cover;
 
-    &-text{
+    &-text {
         @include perfectCentering;
         height: 45vw;
         flex-direction: column;
         justify-content: space-around;
 
-        h3{
+        h3 {
             font-size: 10vw;
             font-family: $font-bycd;
             font-weight: 400;
             color: $color-white;
             line-height: 15vw;
         }
-        p{
+        p {
             font-size: 2.5vw;
             font-weight: 400;
             color: $color-white;
         }
-
     }
     &-btn {
         background-color: $color-primary;
@@ -36,36 +35,36 @@
         padding: 1vw 1.5vw;
         transition: 0.3s;
 
-        &:hover{
-                background-color: $color-secondary;
-                color: $color-white !important;
+        &:hover {
+            background-color: $color-secondary;
+            color: $color-white !important;
         }
     }
 }
 // Slider End
 
 // Search bar Start
-.search-bar{
+.search-bar {
     display: flex; //TODO: create a mixin: columnCentering
     flex-direction: column;
     align-items: center;
     background-color: $color-navy;
     padding: 20px 25px;
 
-    h3{
+    h3 {
         color: $color-white;
         font-weight: 400;
         font-size: 20px;
     }
-    
-    form{
+
+    form {
         display: flex; //TODO: create a mixin: columnCentering
         flex-direction: column;
         align-items: center;
         width: 80%;
     }
 
-    input{
+    input {
         width: 100%;
         background-color: transparent;
         border: 1px solid $color-thirdly;
@@ -76,11 +75,11 @@
         outline: 0;
     }
 
-    .search-btn{
+    .search-btn {
         background-color: $color-secondary;
         color: $color-white;
         padding: 17px 39px;
-        font-family: "Rubik", sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-size: 16px;
         font-weight: 500;
         border: 0;
@@ -98,11 +97,11 @@
 // Search bar End
 
 // Popular Start
-.popular{
+.popular {
     // Popular-heading
-    &-heading{
+    &-heading {
         @extend %row;
-        flex-direction: column;//TODO: create a mixin: columnCentering
+        flex-direction: column; //TODO: create a mixin: columnCentering
         align-items: center;
         margin: 100px 0;
         text-align: center;
@@ -121,7 +120,7 @@
     }
 
     // Popular-container
-    &-container{
+    &-container {
         @extend %row;
         flex-wrap: wrap;
         justify-content: center;
@@ -129,8 +128,8 @@
 }
 // Popular End
 
-// Newsletter Start 
-.newsletter{
+// Newsletter Start
+.newsletter {
     display: flex;
     background-image: url('../images/newsletter.png');
     background-position: 65% 65%;
@@ -139,23 +138,16 @@
     position: relative;
 
     &:before {
-        position: absolute;
-        content: '';
-        background-color: $color-navy;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: .7;
+        @include beforeStyle(0.7);
     }
 
-    &-container{
+    &-container {
         @extend %row;
         flex-direction: column;
         align-items: center;
         z-index: 10000;
 
-        .newsletter-text{
+        .newsletter-text {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -175,7 +167,7 @@
                 color: $color-gray1;
             }
         }
-        .mail-form{
+        .mail-form {
             display: flex;
             flex-direction: column;
 
@@ -206,4 +198,58 @@
         }
     }
 }
-// Newsletter End 
+// Newsletter End
+
+// Video Start
+.video {
+    background-image: url('images/video.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 130px 0;
+    // height: 260px;
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+
+    &:before {
+        @include beforeStyle(0.2);
+        z-index: 1;
+    }
+
+    &-container {
+        @include perfectCentering;
+        flex-direction: column;
+        position: relative;
+        z-index: 100;
+
+
+        h3 {
+            font-family: $font-bycd;
+            font-weight: 400;
+            font-size: 7vw;
+            color: $color-white;
+            margin-bottom: 30px;
+        }
+
+        .video-button {
+            @include perfectCentering;
+            width: 12vw;
+            height: 12vw;
+            border-radius: 50%;
+            background: $color-primary;
+            transition: background .5s;
+            cursor: pointer;
+
+            &:hover {
+                background: $color-secondary;
+            }
+
+            a {
+                color: $color-white;
+                font-size: 5vw;
+            }
+        }
+    }
+}
+// Video End
