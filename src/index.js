@@ -27,3 +27,4 @@ import './images/footer_logo.png'
 //JS Files
 import './js/main.js'
 import './js/utils/toTopBtn.js'
+import './js/utils/menuBtn.js'

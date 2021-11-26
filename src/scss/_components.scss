@@ -17,19 +17,55 @@ header {
 
     .search-icon {
         @include perfectCentering;
+        position: absolute;
+        width: 45px;
+        right: 45px;
+        top: 0;
+        bottom: 0;
+        background-color: $color-secondary;
 
         a {
             color: $color-black;
         }
+        
     }
 
     .drop-down-menu{
         @include perfectCentering;
+        position: absolute;
+        width: 45px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $color-primary;
 
         a {
             color: $color-black;
         }
+        i{
+            &:hover {
+                color: $color-secondary;
+            }
+        }
     }
+
+    .close-menu-btn {
+        position:absolute ;
+        width: 45px ;
+        right: 45px;
+        top: 55px;
+        bottom: 0;
+        background-color: $color-navy;
+        i {
+            color: $color-white;
+            font-size: 30px;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+
 }
 
 // Popular-container Article Component 
